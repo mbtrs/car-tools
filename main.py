@@ -5,7 +5,7 @@ current_month = currentMonth = datetime.now().month
 
 year = int(input("Year? "))
 month = int(input("Month? "))
-# mileage = int(input("Mileage? "))
+#mileage = int(input("Mileage? "))
 
 year_calc = current_year - year
 
