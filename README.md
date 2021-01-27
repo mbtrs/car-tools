@@ -1,3 +1,3 @@
-# mileage-calculator
+# Mileage Calculator
 
-A calculator to calculate mileage between dates
+Is a calculator used to find out whether a used car's mileage is within an acceptable range from today's date.
