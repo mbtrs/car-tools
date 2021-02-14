@@ -31,7 +31,6 @@ def calculator():
         # TGREEN =  '\033[32;1m' # Green Text
         # TRED =  '\033[31;1m' # Red Text
 
-
         def calc0():
             return(f"The vehicle's average mileage and current mileage match.")
 
