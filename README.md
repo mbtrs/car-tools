@@ -6,6 +6,8 @@ The mileage calculator is used to find out whether a used car's mileage is withi
 
 The converter is a simple conversion between kilometers and miles and vice versa.
 
-To run this, type pyhton3 main.py and select calc for the calculator or convert for the converter.
+# How to use
+
+Type `python3 main.py` in the terminal and type **1** for the calculator or **2** for the converter.
 
 **This is a WIP.**

@@ -5,7 +5,7 @@ def calculator():
 
         current_year = datetime.now().year
         current_month = datetime.now().month
-        current_day = datetime.now().day
+        # current_day = datetime.now().day
 
         year = int(input("Year first owner reported (e.g. 2020): "))
         month = int(input("Month first owner reported? (e.g. 5): "))
@@ -28,6 +28,10 @@ def calculator():
         #     BOLD = '\033[1m'
         #     UNDERLINE = '\033[4m'
 
+        # TGREEN =  '\033[32;1m' # Green Text
+        # TRED =  '\033[31;1m' # Red Text
+
+
         def calc0():
             return(f"The vehicle's average mileage and current mileage match.")
 
@@ -48,9 +52,6 @@ def calculator():
 
         def calc8(max_mileage1, mileage):
             return(f"The vehicle is {mileage - max_mileage1:,d} km over average.")
-
-        # TGREEN =  '\033[32;1m' # Green Text
-        # TRED =  '\033[31;1m' # Red Text
 
         if current_year == year:
             print("\n===============================================================\n")

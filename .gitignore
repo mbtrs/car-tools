@@ -2,3 +2,4 @@
 a.webp
 car_directory.py
 cars.json
+__pycache__/
