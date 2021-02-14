@@ -36,22 +36,22 @@ def calculator():
             return(f"The vehicle's average mileage and current mileage match.")
 
         def calc1(mileage_average, mileage):
-            return(f"The vehicle is {mileage_average - mileage:,d} km under average.")
+            return(f"The vehicle is {mileage_average - mileage:,d}km under average.")
 
         def calc2(mileage_average, mileage):
-            return(f"The vehicle is {mileage - mileage_average:,d} km over average.")
+            return(f"The vehicle is {mileage - mileage_average:,d}km over average.")
 
         def calc4(max_mileage2, mileage):
-            return(f"The vehicle is {max_mileage2 - mileage:,d} km under average.")
+            return(f"The vehicle is {max_mileage2 - mileage:,d}km under average.")
 
         def calc5(max_mileage2, mileage):
-            return(f"The vehicle is {mileage - max_mileage2:,d} km over average.")
+            return(f"The vehicle is {mileage - max_mileage2:,d}km over average.")
 
         def calc7(max_mileage1, mileage):
-            return(f"The vehicle is {max_mileage1 - mileage:,d} km under average.")
+            return(f"The vehicle is {max_mileage1 - mileage:,d}km under average.")
 
         def calc8(max_mileage1, mileage):
-            return(f"The vehicle is {mileage - max_mileage1:,d} km over average.")
+            return(f"The vehicle is {mileage - max_mileage1:,d}km over average.")
 
         if current_year == year:
             print("\n===============================================================\n")
@@ -153,6 +153,6 @@ def calculator():
         
         cont = input("Another vehicle? (y/n) ")
         while cont.lower() not in ("y", "n"):
-            const = input("Another vehicle? (y/n) ")
+            cont = input("Another vehicle? (y/n) ")
         if cont == "n":
             break
