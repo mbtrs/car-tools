@@ -1,5 +1,3 @@
-# from subprocess import call
-
 import mileage_calculator as mc
 import convert as km
 # import car_directory as dr
