@@ -4,8 +4,8 @@ while True:
     # import car_directory as dr
 
     print("\n==========MENU==========\n")
-    print("(1) Mileage calculator")
-    print("(2) Convert KM to M or M to KM")
+    print("Enter 1 for calculator")
+    print("Enter 2 for converter")
     # print("(3) Car directory")
     print("\n==========MENU==========\n")
 
@@ -18,4 +18,4 @@ while True:
     # elif option == "3":
     #     dr.directory()
     else:
-        print("This is not a valid entry")
+        print("This is not a valid entry.")

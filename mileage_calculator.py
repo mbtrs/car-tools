@@ -1,4 +1,5 @@
 def calculator():
+
     while True:
         from datetime import datetime
         import calc_functions as cf
@@ -6,10 +7,24 @@ def calculator():
         current_year = datetime.now().year
         current_month = datetime.now().month
         # current_day = datetime.now().day
-
-        year = int(input("Year first owner reported (e.g. 2020): "))
-        month = int(input("Month first owner reported? (e.g. 5 for May): "))
-        mileage = int(input("Vehicle's mileage: "))
+        while True:
+            try:
+                year = int(input("Year first owner reported (e.g. 2020): "))
+                break
+            except ValueError:
+                print(cf.convert0())
+        while True:
+            try:
+                month = int(input("Month first owner reported? (e.g. 5 for May): "))
+                break
+            except ValueError:
+                print(cf.convert0())
+        while True:
+            try:
+                mileage = int(input("Vehicle's mileage: "))
+                break
+            except ValueError:
+                print(cf.convert0())
 
         year_calc = (current_year - year)
 
@@ -71,7 +86,7 @@ def calculator():
         else:
             print("NaN")
 
-        has_another_vehicle = input("Another vehicle? (Y/n): ")
+        has_another_vehicle = input("Another? (y/n): ")
         if has_another_vehicle.lower() == "y":
             pass
         elif has_another_vehicle.lower() == "n":

@@ -1,25 +1,33 @@
 def convert():
     while True:
-        print("\n=====MENU=====\n")
-        print("(1) km to miles")
-        print("(2) miles to km")
-        print("\n=====MENU=====\n")
+        import calc_functions as cf
+
+        print("\n==========MENU==========\n")
+        print("Enter 1 for km to miles")
+        print("Enter 2 for miles to km")
+        print("\n==========MENU==========\n")
 
         option = input("Option: ")
 
         if option == "1":
-            km = int(input("Kilometers: "))
-            km_calc = float(km / 1.60934)
-            print(f'{km} kilometers is equivalent to {round(km_calc, 0)} miles.')
+            try:
+                km = int(input("Kilometers: "))
+                km_calc = float(km / 1.609344)
+                print(f'{km} kilometers is equivalent to {round(km_calc, 4)} miles.')
+            except ValueError:
+                print(cf.convert0())
+
         elif option == "2":
-            m = int(input("Miles: "))
-            m_calc = float(m * 1.60934)
-            print(f'{m} miles is equivalent to {round(m_calc, 0)} kilometers.')
-
+            try:
+                m = int(input("Miles: "))
+                m_calc = float(m * 1.609344)
+                print(f'{m} miles is equivalent to {round(m_calc, 4)} kilometers.')
+            except ValueError:
+                print(cf.convert0())
         else:
-            print("This is not a valid entry")
+            print(cf.convert0())
 
-        has_another_calc = input("Another calculation? (Y/n): ")
+        has_another_calc = input("Another? (y/n): ")
         if has_another_calc.lower() == "y":
             pass
         elif has_another_calc.lower() == "n":
