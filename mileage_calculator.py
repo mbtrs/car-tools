@@ -7,6 +7,7 @@ def calculator():
         current_year = datetime.now().year
         current_month = datetime.now().month
         # current_day = datetime.now().day
+
         while True:
             try:
                 year = int(input("Year first owner reported (e.g. 2020): "))
@@ -84,7 +85,7 @@ def calculator():
                     print(cf.calc0())
                     print("\n===============================================================\n")
         else:
-            print("NaN")
+            print(cf.warning0())
 
         has_another_vehicle = input("Another? (y/n): ")
         if has_another_vehicle.lower() == "y":
