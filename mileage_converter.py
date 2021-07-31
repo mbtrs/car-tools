@@ -1,6 +1,6 @@
-def convert():
+def converter():
     while True:
-        import calc_functions as cf
+        import library as lb
 
         print("\n==========MENU==========\n")
         print("Enter 1 for km to miles")
@@ -15,7 +15,7 @@ def convert():
                 km_calc = float(km / 1.609344)
                 print(f'{km} kilometers is equivalent to {round(km_calc, 4)} miles.')
             except ValueError:
-                print(cf.convert0())
+                print(lb.convert0())
 
         elif option == "2":
             try:
@@ -23,9 +23,9 @@ def convert():
                 m_calc = float(m * 1.609344)
                 print(f'{m} miles is equivalent to {round(m_calc, 4)} kilometers.')
             except ValueError:
-                print(cf.convert0())
+                print(lb.convert0())
         else:
-            print(cf.convert0())
+            print(lb.convert0())
 
         has_another_calc = input("Another? (y/n): ")
         if has_another_calc.lower() == "y":

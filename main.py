@@ -1,6 +1,6 @@
 while True:
-    import mileage_calculator as mca
-    import mileage_converter as mco
+    import mileage_calculator
+    import mileage_converter
     # import car_directory as dr
 
     print("\n==========MENU==========\n")
@@ -13,9 +13,9 @@ while True:
     option = input("Option: ")
 
     if option == "1":
-        mca.calculator()
+        mileage_calculator.calculator()
     elif option == "2":
-        mco.convert()
+        mileage_converter.converter()
     # elif option == "3":
     #     dr.directory()
     elif option == "3":
