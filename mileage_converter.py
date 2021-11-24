@@ -13,7 +13,7 @@ def converter():
             try:
                 km = int(input("Kilometers: "))
                 km_calc = float(km / 1.609344)
-                print(f'{km} kilometers is equivalent to {round(km_calc, 4)} miles.')
+                print(f"{km} kilometers is equivalent to {round(km_calc, 4)} miles.")
             except ValueError:
                 print(lb.convert0())
 
@@ -21,11 +21,11 @@ def converter():
             try:
                 m = int(input("Miles: "))
                 m_calc = float(m * 1.609344)
-                print(f'{m} miles is equivalent to {round(m_calc, 4)} kilometers.')
+                print(f"{m} miles is equivalent to {round(m_calc, 4)} kilometers.")
             except ValueError:
                 print(lb.convert0())
         else:
-            print(lb.convert0())
+            print(l.convert0())
 
         has_another_calc = input("Another? (y/n): ")
         if has_another_calc.lower() == "y":

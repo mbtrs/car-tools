@@ -8,3 +8,4 @@ a.py
 data.txt
 .idea
 .vscode
+*pyc
