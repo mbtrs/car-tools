@@ -16,38 +16,39 @@ def calculator():
             if month <= lb.current_month:
                 print(lb.mileage_display(max_mileage_1, mileage))
                 if max_mileage_1 > mileage:
-                    text_1 = lb.find_longest_statement([lb.mileage_display(max_mileage_1, mileage), lb.calc7(max_mileage_1, mileage)])
-                    print(text_1 + lb.calc7(max_mileage_1, mileage) + text_1)
+                    text_1 = lb.find_longest_statement([lb.mileage_display(max_mileage_1, mileage), lb.max_mileage_gt_mileage_2(max_mileage_1, mileage)])
+                    print(text_1 + lb.max_mileage_gt_mileage_2(max_mileage_1, mileage) + text_1)
                 elif max_mileage_1 < mileage:
-                    text_2 = lb.find_longest_statement([lb.mileage_display(max_mileage_1, mileage), lb.calc8(max_mileage_1, mileage)])
-                    print(text_2 + lb.calc8(max_mileage_1, mileage) + text_2)
+                    text_2 = lb.find_longest_statement([lb.mileage_display(max_mileage_1, mileage), lb.max_mileage_lt_mileage_2(max_mileage_1, mileage)])
+                    print(text_2 + lb.max_mileage_lt_mileage_2(max_mileage_1, mileage) + text_2)
                 else:
-                    print(lb.calc0())
+                    print(lb.max_mileage_equals_mileage())
             else:
                 print(lb.error0())
         elif year < lb.current_year:
             if lb.current_month != month:
                 print(lb.mileage_display_1(max_mileage_2, mileage))
                 if max_mileage_2 > mileage:
-                    text_3 = lb.find_longest_statement([lb.mileage_display_1(max_mileage_2, mileage), lb.calc4(max_mileage_2, mileage)])
-                    print(text_3 + lb.calc4(max_mileage_2, mileage) + text_3)
+                    text_3 = lb.find_longest_statement([lb.mileage_display_1(max_mileage_2, mileage), lb.max_mileage_gt_mileage_1(max_mileage_2, mileage)])
+                    print(text_3 + lb.max_mileage_gt_mileage_1(max_mileage_2, mileage) + text_3)
                 elif max_mileage_2 < mileage:
-                    text_4 = lb.find_longest_statement([lb.mileage_display_1(max_mileage_2, mileage), lb.calc5(max_mileage_2, mileage)])
-                    print(text_4 + lb.calc5(max_mileage_2, mileage) + text_4)
+                    text_4 = lb.find_longest_statement([lb.mileage_display_1(max_mileage_2, mileage), lb.max_mileage_lt_mileage_1(max_mileage_2, mileage)])
+                    print(text_4 + lb.max_mileage_lt_mileage_1(max_mileage_2, mileage) + text_4)
                 else:
-                    print(lb.calc0())
+                    print(lb.max_mileage_equals_mileage())
             elif lb.current_month == month:
                 print(lb.mileage_display_2(mileage_average, mileage))
                 if mileage_average > mileage:
-                    text_5 = lb.find_longest_statement([lb.mileage_display_2(mileage_average, mileage), lb.calc1(mileage_average, mileage)])
-                    print(text_5 + lb.calc1(mileage_average, mileage) + text_5)
+                    text_5 = lb.find_longest_statement([lb.mileage_display_2(mileage_average, mileage), lb.max_mileage_gt_mileage_3(mileage_average, mileage)])
+                    print(text_5 + lb.max_mileage_gt_mileage_3(mileage_average, mileage) + text_5)
                 elif mileage_average < mileage:
-                    text_6 = lb.find_longest_statement([lb.mileage_display_2(mileage_average, mileage), lb.calc2(mileage_average, mileage)])
-                    print(text_6 + lb.calc2(mileage_average, mileage) + text_6)
+                    text_6 = lb.find_longest_statement([lb.mileage_display_2(mileage_average, mileage), lb.max_mileage_lt_mileage_3(mileage_average, mileage)])
+                    print(text_6 + lb.max_mileage_lt_mileage_3(mileage_average, mileage) + text_6)
                 else:
-                    print(lb.calc0())
+                    print(lb.max_mileage_equals_mileage())
         else:
             print(lb.warning0())
+
 
         has_another_vehicle = input("Another vehicle? (y/n): ").lower()
         if has_another_vehicle in ("y", "yes"):

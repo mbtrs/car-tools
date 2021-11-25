@@ -65,37 +65,37 @@ def lines():
     return "\n"*2 + "="*57 + "\n"*2
 
 
-def calc0():
+def max_mileage_equals_mileage():
     return lines() + WARN + f"This vehicle's average mileage and" + \
         " current mileage match." + END + lines()
 
 
-def calc1(mileage_average, mileage):
+def max_mileage_gt_mileage_3(mileage_average, mileage):
     return "\n"*2 + PASS + f"This vehicle is {mileage_average - mileage:,d}km" + \
         " under average." + END + "\n"*2
 
 
-def calc2(mileage_average, mileage):
+def max_mileage_lt_mileage_3(mileage_average, mileage):
     return "\n"*2 + FAIL + f"This vehicle is {mileage - mileage_average:,d}km" + \
         " over average." + END + "\n"*2
 
 
-def calc4(max_mileage_2, mileage):
+def max_mileage_gt_mileage_1(max_mileage_2, mileage):
     return "\n"*2 + PASS + f"This vehicle is {max_mileage_2 - mileage:,d}km" + \
         " under average." + END + "\n"*2
 
 
-def calc5(max_mileage_2, mileage):
+def max_mileage_lt_mileage_1(max_mileage_2, mileage):
     return "\n"*2 + FAIL + f"This vehicle is {mileage - max_mileage_2:,d}km" + \
         " over average." + END + "\n"*2
 
 
-def calc7(max_mileage_1, mileage):
+def max_mileage_gt_mileage_2(max_mileage_1, mileage):
     return "\n"*2 + PASS + f"This vehicle is {max_mileage_1 - mileage:,d}km" + \
         " under average." + END + "\n"*2
 
 
-def calc8(max_mileage_1, mileage):
+def max_mileage_lt_mileage_2(max_mileage_1, mileage):
     return "\n"*2 + FAIL + f"This vehicle is {mileage - max_mileage_1:,d}km" + \
         " over average." + END + "\n"*2
 
