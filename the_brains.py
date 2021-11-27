@@ -20,10 +20,16 @@ def get_int(txt: str) -> int:
 def year_input():
     while True:
         year = get_int("Year first owner reported: ")
-        year_1, year_2 = 1900, current_year
-        if year_1 < year <= year_2:
+        oldest_year = 1900
+        if oldest_year < year <= current_year:
             return year
-        print(FAIL + f"{year} does not fall into the year range ({year_1} to {year_2})" + END)
+        print(FAIL + f"{year} does not fall into the year range ({oldest_year} to {current_year})" + END)
+
+
+year = year_input
+
+# if __name__ == "__main__":
+#     year_input()
 
 
 def month_input():
@@ -35,10 +41,16 @@ def month_input():
         print(FAIL + f"{month} is not a valid month" + END)
 
 
+month = month_input
+
+
 def mileage_input():
     while True:
         mileage = get_int("Vehicle's mileage: ")
         return mileage
+
+
+mileage = mileage_input
 
 
 def mileage_display(max_mileage_1, mileage):
@@ -76,28 +88,23 @@ def max_mileage_gt_mileage_3(mileage_average, mileage):
 
 
 def max_mileage_lt_mileage_3(mileage_average, mileage):
-    return "\n"*2 + FAIL + f"This vehicle is {mileage - mileage_average:,d}km" + \
-        " over average." + END + "\n"*2
+    return "\n"*2 + FAIL + f"This vehicle is {mileage - mileage_average:,d}km over average." + END + "\n"*2
 
 
 def max_mileage_gt_mileage_1(max_mileage_2, mileage):
-    return "\n"*2 + PASS + f"This vehicle is {max_mileage_2 - mileage:,d}km" + \
-        " under average." + END + "\n"*2
+    return "\n"*2 + PASS + f"This vehicle is {max_mileage_2 - mileage:,d}km under average." + END + "\n"*2
 
 
 def max_mileage_lt_mileage_1(max_mileage_2, mileage):
-    return "\n"*2 + FAIL + f"This vehicle is {mileage - max_mileage_2:,d}km" + \
-        " over average." + END + "\n"*2
+    return "\n"*2 + FAIL + f"This vehicle is {mileage - max_mileage_2:,d}km over average." + END + "\n"*2
 
 
 def max_mileage_gt_mileage_2(max_mileage_1, mileage):
-    return "\n"*2 + PASS + f"This vehicle is {max_mileage_1 - mileage:,d}km" + \
-        " under average." + END + "\n"*2
+    return "\n"*2 + PASS + f"This vehicle is {max_mileage_1 - mileage:,d}km under average." + END + "\n"*2
 
 
 def max_mileage_lt_mileage_2(max_mileage_1, mileage):
-    return "\n"*2 + FAIL + f"This vehicle is {mileage - max_mileage_1:,d}km" + \
-        " over average." + END + "\n"*2
+    return "\n"*2 + FAIL + f"This vehicle is {mileage - max_mileage_1:,d}km over average." + END + "\n"*2
 
 
 def find_longest_statement(text):
