@@ -1,6 +1,12 @@
 # Usage
 
-Type `python3 main.py` in a terminal window. Choose between **1** for the calculator, **2** for the converter or **3** to exit the application.
+Type `python3 main.py` in a terminal window.
+
+Choose between:
+
+* **1** for the calculator
+* **2** for the converter
+* **3** to exit the application
 
 # Mileage Calculator
 

@@ -1,0 +1,44 @@
+{
+    "car": [
+        {
+            "brand": "BMW",
+            "model": "1 series",
+            "body_style": "Coupe1"
+        },
+        {
+            "brand": "BMW",
+            "model": "2 series",
+            "body_style": "Coupe2"
+        },
+        {
+            "brand": "BMW",
+            "model": "3 series",
+            "body_style": "Coupe3"
+        },
+        {
+            "brand": "BMW",
+            "model": "4 series",
+            "body_style": "Coupe4"
+        },
+        {
+            "brand": "BMW",
+            "model": "5 series",
+            "body_style": "Coupe5"
+        },
+        {
+            "brand": "BMW",
+            "model": "6 series",
+            "body_style": "Coupe6"
+        },
+        {
+            "brand": "BMW",
+            "model": "7 series",
+            "body_style": "Coupe7"
+        },
+        {
+            "brand": "BMW",
+            "model": "8 series",
+            "body_style": "Coupe8"
+        }
+    ]
+}

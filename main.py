@@ -4,10 +4,10 @@ while True:
     # import car_directory as dr
 
     print("\n==========MENU==========\n")
-    print("Enter 1 for calculator")
-    print("Enter 2 for converter")
+    print("Input 1 for calculator")
+    print("Input 2 for converter")
     # print("(3) Car directory")
-    print("Enter 3 to exit")
+    print("Input 3 to exit")
     print("\n==========MENU==========\n")
 
     option = input("Option: ")

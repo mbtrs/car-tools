@@ -1,6 +1,6 @@
 def converter():
     while True:
-        import library as lb
+        import the_brains
 
         print("\n==========MENU==========\n")
         print("Enter 1 for km to miles")
@@ -25,7 +25,7 @@ def converter():
             except ValueError:
                 print(lb.convert0())
         else:
-            print(l.convert0())
+            print(the_brains.convert0())
 
         has_another_calc = input("Another? (y/n): ")
         if has_another_calc.lower() == "y":
